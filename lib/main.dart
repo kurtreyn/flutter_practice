@@ -11,27 +11,18 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('my first app'),
+        title: const Text('my first app'),
         centerTitle: true,
         backgroundColor: Colors.red[600],
       ),
-      // ignore: prefer_const_constructors
-      body: Center(
-        child: ElevatedButton.icon(
-            onPressed: () {},
-            // ignore: prefer_const_constructors
-            icon: Icon(Icons.mail),
-            // ignore: prefer_const_constructors
-            label: Text('Mail me'),
-            // ignore: prefer_const_constructors
-            style: ElevatedButton.styleFrom(
-              primary: Colors.amber,
-            )),
+      body: Padding(
+        padding: EdgeInsets.all(90.0),
+        child: const Text('hello'),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        child: Text('click'),
         backgroundColor: Colors.red[600],
+        child: const Text('click'),
       ),
     );
   }
